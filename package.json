@@ -1,6 +1,6 @@
 {
   "name": "cryptonger",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "The module encrypts and decrypts text using a password. By default uses the aes-256-ctr algorithm",
   "main": "bin/index.js",
   "bin": {
