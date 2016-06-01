@@ -1,7 +1,7 @@
 
 # `$ cryptonger`
 
-[![cryptonger](http://imgur.com/ymuWQnZ)](#)
+[![cryptonger](http://i.imgur.com/ymuWQnZ.png)](#)
 
 The module encrypts and decrypts text using a password. By default uses the aes-256-ctr algorithm
 
