@@ -18,6 +18,11 @@ $ npm i -g cryptonger
 
 Then, run `cryptonger --help` and see what the CLI tool can do.
 
+```sh
+cryptonger encrypt 1234 hello // 138316142c
+cryptonger decrypt 1234 138316142c // hello
+```
+
 ## Example
 
 Here is an example how to use this package as library.
