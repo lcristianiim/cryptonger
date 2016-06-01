@@ -1,46 +1,40 @@
-# crypt-to-file
+
+# `$ cryptonger`
 
 The module encrypts and decrypts text using a password. By default uses the aes-256-ctr algorithm
 
 ## Installation
 
 ```sh
-$ npm i crypt-to-file
+$ npm i cryptonger
 ```
+
+### CLI Usage
+You can install the package globally and use it as command line tool:
+
+```sh
+$ npm i -g cryptonger
+```
+
+Then, run `cryptonger --help` and see what the CLI tool can do.
 
 ## Example
 
+Here is an example how to use this package as library.
+
 ```js
-const crypter = require("crypt-to-file");
+const cryptonger = require("cryptonger/cryptonger");
 
 // Encrypt the text using the password "123456"
-console.log(crypter.encrypt("Cool text to be crypted", "123456")); // 'b3e15ab6b57967c72bdcb5a88ce3708adf1167da641db5'
+console.log(cryptonger.encrypt("123456", "Cool text to be crypted")); // 'b3e15ab6b57967c72bdcb5a88ce3708adf1167da641db5'
 // Decrypt the text using the password "123456"
-console.log(crypter.decrypt("b3e15ab6b57967c72bdcb5a88ce3708adf1167da641db5", "123456")); // 'Cool text to be crypted'
+console.log(cryptonger.decrypt("123456", "b3e15ab6b57967c72bdcb5a88ce3708adf1167da641db5")); // 'Cool text to be crypted'
 
 ```
 
 ## Documentation
 
-### `encrypt(text, password)`
-Encrypts string.
-
-#### Params
-- **String** `text`: The string to be encrypted.
-- **String** `password`: The password used for encryption
-
-#### Return
-- **String** Encrypted string.
-
-### `decrypt(text, password)`
-Decrypts string.
-
-#### Params
-- **String** `text`: The string to be decrypted.
-- **String** `password`: The password used for decryption.
-
-#### Return
-- **String** Decrypted string.
+For full API reference, see the [DOCUMENTATION.md][docs] file.
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
